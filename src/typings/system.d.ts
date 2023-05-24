@@ -302,7 +302,7 @@ declare namespace App {
 }
 
 declare namespace I18nType {
-  type langType = 'en' | 'zh-CN';
+  type langType = 'en' | 'zh-CN' | 'km-KH';
 
   interface Schema {
     system: {
@@ -310,7 +310,7 @@ declare namespace I18nType {
     };
     routes: {
       dashboard: {
-        dashboard: string;
+        _value: string;
         analysis: string;
         workbench: string;
       };
