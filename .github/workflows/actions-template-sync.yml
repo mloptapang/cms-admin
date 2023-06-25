@@ -18,8 +18,7 @@ jobs:
             fetch-depth: 0
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v0.8.0
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         with:
+          github_token: ${{secrets.GITHUB_TOKEN}}
           source_repo_path: 'chhinsras/soybean-admin'
           upstream_branch: 'main' # defaults to main
